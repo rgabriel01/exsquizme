@@ -7,6 +7,6 @@ Specifications:
 * Rails Version: 4.2.0
 * Bootstrap 3.3
 
-![alt screenshot](https://https://github.com/rgabriel01/exsquizme/tree/master/app/assets/images/screenshots/first.png)
-![alt screenshot](https://https://github.com/rgabriel01/exsquizme/tree/master/app/assets/images/screenshots/second.png)
-![alt screenshot](https://https://github.com/rgabriel01/exsquizme/tree/master/app/assets/images/screenshots/third.png)
+![alt screenshot](https://https://github.com/rgabriel01/exsquizme/blob/master/app/assets/images/screenshots/first.png)
+![alt screenshot](https://https://github.com/rgabriel01/exsquizme/blob/master/app/assets/images/screenshots/second.png)
+![alt screenshot](https://https://github.com/rgabriel01/exsquizme/blob/master/app/assets/images/screenshots/third.png)
