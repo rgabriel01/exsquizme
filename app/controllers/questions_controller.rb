@@ -1,9 +1,12 @@
 class QuestionsController < ApplicationController
-  before_filter :initiaze_question, only: [:show]
+  # before_filter :redirect_to_root_if_no_user, only: [:show]
   before_filter :check_for_active_step, only: [:show]
+  before_filter :initiaze_question, only: [:show]
 
   def show
+    @current_user = current_user
     @description = @question.description
+    @id = @question.id
     @choices = @question.choices
   end
 

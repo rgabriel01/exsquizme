@@ -1,9 +1,10 @@
+%p="Good Day #{@current_user.name}!"
 %p=@description
 = form_tag(controller: :answers, method: :post) do
+  = hidden_field_tag :question_id, @id
   %ul
     - @choices.each do |choice|
       %li
         = radio_button_tag :choice, choice.value 
         = label_tag :choice, choice.value
   = button_tag 'Next Question', type: :submit
-  

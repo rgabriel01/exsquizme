@@ -1,0 +1,7 @@
+- @question_master_list.each do |question|
+  %p=question[:description]
+  %table
+    - (@answer_master_list[question[:id].to_s]||[]).each do |answer|
+      %tr
+        %td=answer[:name]
+        %td=answer[:value]
