@@ -5,14 +5,19 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-<% if flash[:error] %>
-  <div class="error"><%= flash[:error] %></div>
-<% elsif flash[:notice] %>
-  <div class="notice"><%= flash[:notice] %></div>
-<% end %>
-<%= yield %>
+<div class='container background-white'>
+  <% if flash[:error] %>
+    <div class="alert alert-danger mt20"><%= flash[:error] %></div>
+  <% elsif flash[:notice] %>
+    <div class="alert alert-info mt20"><%= flash[:notice] %></div>
+  <% end %>
+</div>
 
+<div class='container background-white'>
+  <%= yield %>
+</div>
 </body>
 </html>

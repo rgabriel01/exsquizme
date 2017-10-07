@@ -1,0 +1,34 @@
+html, body {
+  height: 100%;
+}
+
+ul { list-style: none;}
+
+.fill {
+  min-height: 100%;
+  height: 100%
+}
+
+.mt25 { margin-top: 25px; }
+.mt20 { margin-top: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb20 { margin-bottom: 20px; }
+
+.mr10 { margin-right: 10px;}
+.ml10 { margin-left: 10px;}
+
+.pl20p { padding-left: 20%; }
+.pr20p { padding-right: 20%;}
+
+.pl10 {padding-left: 10px;}
+.pr10 {padding-right: 10px;}
+
+.background-black { background: #000; }
+.background-white { background: #fff; }
+
+.logo {
+  background-image: url(/assets/logo.png); 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 115px;
+}

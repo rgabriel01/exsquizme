@@ -1,10 +1,12 @@
-%p="Good Day #{@current_user.name}!"
-%p=@description
-= form_tag(controller: :answers, method: :post) do
-  = hidden_field_tag :question_id, @id
-  %ul
-    - @choices.each do |choice|
-      %li
-        = radio_button_tag :choice, choice.value 
-        = label_tag :choice, choice.value
-  = button_tag 'Next Question', type: :submit
+.row
+  .col-xs-12.pl20p.pr20p.mt20
+    %h3=@description
+    = form_tag(controller: :answers, method: :post) do
+      = hidden_field_tag :question_id, @id
+      %ul.pl10.mb20.mt20
+        - @choices.each do |choice|
+          .radio
+            %label
+              = radio_button_tag :choice, choice.value
+              = choice.value
+      = button_tag 'Next Question', type: :submit, class: 'btn btn-default btn-block'

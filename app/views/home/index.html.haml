@@ -1,3 +1,8 @@
-= form_tag(controller: :users, method: :post) do
-  = text_field :user, :name
-  = button_tag 'START', type: :submit
+.row
+  .col-xs-12
+    .logo.mt25.mb25
+  .col-xs-12.pl20p.pr20p
+    = form_tag(controller: :users, method: :post) do
+      .form-group
+        = text_field :user, :name, class: 'form-control', placeholder: 'Your name goes here...'
+      = button_tag 'START', type: :submit, class:'btn btn-default btn-block'

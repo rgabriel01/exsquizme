@@ -1,7 +1,20 @@
-- @question_master_list.each do |question|
-  %p=question[:description]
-  %table
-    - (@answer_master_list[question[:id].to_s]||[]).each do |answer|
-      %tr
-        %td=answer[:name]
-        %td=answer[:value]
+.row
+  .col-xs-12
+    %h1
+      Answers Summary
+.row
+  .col-xs-12
+    - @question_master_list.each_with_index do |question, index|
+      .panel.panel-default
+        .panel-heading="Question ##{index + 1}"
+        .panel-body=question[:description]
+        %table.table.table-condensed
+          %tr
+            %th
+              User
+            %th
+              Answer
+          - (@answer_master_list[question[:id].to_s]||[]).each do |answer|
+            %tr
+              %td=answer[:name]
+              %td=answer[:value]

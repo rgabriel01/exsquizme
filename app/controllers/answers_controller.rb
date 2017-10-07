@@ -15,7 +15,7 @@ class AnswersController < ApplicationController
 
   def sanitize_answer
     return if params[:choice]
-    flash[:notice] = 'Please select an answer.'
+    flash[:notice] = 'Oh! you must choose at least one answer.'
     redirect_to question_path(current_user.active_question.id || 1)
   end
 end
