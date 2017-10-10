@@ -18,6 +18,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'awesome_print'
 
+gem 'chewy'
+gem 'elasticsearch'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+
 group :development, :test do
   gem 'pry'
 
